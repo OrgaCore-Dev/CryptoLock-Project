@@ -1,0 +1,270 @@
+/* ============================ Estilos da Página Principal =============================== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Scroll suave para âncoras */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*  Navbar Superior */
+
+.navbar_top {
+  background-color: #222;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar_top h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar_links,
+.navbar_links a {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar_links a:hover {
+  color: #d3d3d3;
+}
+
+/* Navbar Inferior */
+
+.footer {
+  background-color: #222;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.95;
+}
+
+
+/* Conteúdo Principal */
+
+.main_content {
+  padding: 20px;
+  align-self: center;
+}
+
+/* Sobre Nós */
+.about_section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Card dentro da seção Sobre Nós */
+.about_card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+#logo_container {
+  flex: 0 0 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo_image {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+
+.about_text {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.about_text h2 {
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.about_text p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* Responsividade: empilhar em telas pequenas */
+@media (max-width: 768px) {
+  .about_card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #logo_container {
+    flex: 0 0 auto;
+  }
+
+  .about_text {
+    text-align: center;
+  }
+}
+
+/* Banner Principal */
+.banner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 80px 20px;
+  background: transparent;
+  color: inherit;
+  margin-bottom: 40px;
+}
+
+#banner-title {
+  font-size: 4em;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#banner-subtitle {
+  font-size: 1.8em;
+  text-align: center;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+#sign-link {
+  font-size: 1.4em;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#sign-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #f5f5f5;
+}
+
+
+/* Planos de Assinatura */
+.plans_section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 120px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#plans-text {
+  font-size: 1.25em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.plans_button {
+  background-color: #161616;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.plans_button:hover {
+  background-color: #5c5c5c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ============================== Estilos da Página Services ===================================== */
+
+.services_section {
+  max-width: 85%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+#title_services {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.service_card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 1.2em;
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #1a1a1a;
+  }
+}
+.services_button_container {
+  p {
+    font-size: 1.2em;
+    color: #2c3e50;
+  }
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ---------------------------------- Estilos da Página de Inscrição ----------------------------------------*/
+
